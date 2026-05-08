@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Wale | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #38bdf8;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .about-text h3 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #38bdf8;
+        }
+
+        .education {
+            margin-top: 20px;
+        }
+
+        .education li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background: #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #111827;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero h2 {
+                font-size: 38px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Shubham.</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <h2>Hello, I'm <span>Shubham Wale</span></h2>
+
+        <p>
+            Mechanical Engineering Student at MITAOE passionate about
+            CAD Design, Programming, Mechanical Systems,
+            and Engineering Technologies.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                alt="Profile Image">
+
+            <div class="about-text">
+
+                <h3>Mechanical Engineering Student</h3>
+
+                <p>
+                    I am currently pursuing Engineering in Mechanical Branch
+                    at MIT Academy of Engineering (MITAOE).
+                    I am interested in CAD Design, Mechanical Systems,
+                    Programming, and Engineering Software.
+                </p>
+
+                <div class="education">
+
+                    <h3>Education</h3>
+
+                    <ul>
+                        <li>10th SSC Board : 80%</li>
+                        <li>12th HSC Board : 65%</li>
+                        <li>Engineering SEM 1 SGPA : 7.6</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <h3>AutoCAD</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Fusion 360</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Recap Pro</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>C Language</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Mechanical Design</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                    alt="Project">
+
+                <div class="project-content">
+
+                    <h3>Mechanical Design Project</h3>
+
+                    <p>
+                        CAD based mechanical design and modeling project
+                        created using Fusion 360 and AutoCAD.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
+                    alt="Project">
+
+                <div class="project-content">
+
+                    <h3>Programming Project</h3>
+
+                    <p>
+                        Engineering calculation programs developed using
+                        Python and C language.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                    alt="Project">
+
+                <div class="project-content">
+
+                    <h3>3D Modeling Project</h3>
+
+                    <p>
+                        3D modeling and rendering work using modern
+                        mechanical design software tools.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Contact Details</h2>
+
+        <p>📞 Phone : 8177917177</p>
+
+        <p>📧 Email : shubhamwale2007@gmail.com</p>
+
+        <p>🎓 College : MITAOE</p>
+
+        <p>📍 Branch : Mechanical Engineering</p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Shubham Wale | Portfolio Website
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
